@@ -1,0 +1,25 @@
+#!/usr/bin/with-contenv bash
+
+set -u # Unset Variables are an error
+set -e # Exit on error
+
+
+# Check process and kill if running
+check_and_terminate_process 'xteve'
+
+# Ensure Log folder exists
+if [ ! -d '/config/log/xteve' ]; then
+	mkdir -p /config/log/xteve/
+	chown -R 900:900 /config/log/xteve
+	chmod -R 0755 /config/log/xteve
+fi
+
+
+
+echo 'Starting xteve . . .'
+exec 2>&1 s6-setuidgid 900:900 \
+		  /app/xteve \
+		  -port=34400 \
+		  -config=/config \
+		  > /config/log/xteve/xteve.log 2>&1
+		  
