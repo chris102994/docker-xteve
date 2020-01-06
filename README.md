@@ -2,7 +2,7 @@
 
 ## Outside Packages
 * Built on my [Base Image](https://github.com/chris102994/docker-base-image)
-  * [xTeVe]https://xteve.de/) - M3U Proxy for Plex DVR and Emby Live TV.
+  * [xTeVe](https://xteve.de/) - M3U Proxy for Plex DVR and Emby Live TV.
 
 ## Docker
 ```
