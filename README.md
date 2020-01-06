@@ -3,6 +3,8 @@
 ## Outside Packages
 * Built on my [Base Image](https://github.com/chris102994/docker-base-image)
   * [xTeVe](https://xteve.de/) - M3U Proxy for Plex DVR and Emby Live TV.
+  
+**URL**: http://localhost:34400/web/
 
 ## Docker
 ```
