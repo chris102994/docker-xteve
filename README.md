@@ -3,8 +3,6 @@
 ## Outside Packages
 * Built on my [Base Image](https://github.com/chris102994/docker-base-image)
   * [xTeVe](https://xteve.de/) - M3U Proxy for Plex DVR and Emby Live TV.
-  
-**URL**: http://localhost:34400/web/
 
 ## Docker
 ```
@@ -12,6 +10,7 @@ docker run \
 	--name=docker-xteve \
 	-p 34400:34400 \
 	-v </path/to/appdata/config>:/config \
+	-e XTEVE_PORT=34400 `optional unless you change the port mapping` \
 	--restart unless-stopped \
 	christopher102994/docker-xteve:alpine-3.10
 ```
@@ -23,3 +22,8 @@ Container specific parameters passed at runtime. The format is `<external>:<inte
 | -------- | -------- |
 | -p 34400 | The web UI port. |
 | -v /config | The directory where the application will store configuration information. |
+| -e XTEVE_PORT | This must match the port you map to the container so that xteve can correctly forward the stream. (Default=34400) |
+
+## Application Setup
+
+The admin interface is available at `http://<ip>:<port>/web/`
