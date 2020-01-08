@@ -12,8 +12,8 @@ if [ ! -d '/config/log/xteve' ]; then
 	mkdir -p /config/log/xteve/
 fi
 
-chown -R 900:900 /config/log/xteve
-chmod -R 0755 /config/log/xteve
+chown -R 900:900 /config
+chmod -R 0755 /config
 
 XTEVE_PORT=${XTEVE_PORT:-34400}
 
