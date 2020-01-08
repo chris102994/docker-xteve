@@ -19,7 +19,7 @@ XTEVE_PORT=${XTEVE_PORT:-34400}
 echo 'Starting xteve . . .'
 exec 2>&1 s6-setuidgid 900:900 \
 		  /app/xteve \
-		  -port="${XTEVE_PORT}" \
 		  -config=/config \
+		  -port="${XTEVE_PORT}" \
 		  > /config/log/xteve/xteve.log 2>&1
 		  
