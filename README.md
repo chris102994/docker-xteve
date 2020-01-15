@@ -4,7 +4,10 @@
 
  
  [![Build Status](https://travis-ci.com/chris102994/docker-xteve.svg?branch=master)](https://travis-ci.com/chris102994/docker-xteve)
-
+ [![Image Size](https://img.shields.io/microbadger/image-size/christopher102994/docker-xteve/alpine-3.10)](https://hub.docker.com/repository/docker/christopher102994/docker-xteve)
+ [![Image Layers](https://img.shields.io/microbadger/layers/christopher102994/docker-xteve/alpine-3.10)](https://hub.docker.com/repository/docker/christopher102994/docker-xteve)
+ [![Image Pulls](https://img.shields.io/docker/pulls/christopher102994/docker-xteve)](https://hub.docker.com/repository/docker/christopher102994/docker-xteve)
+ 
 ## Outside Packages
 * Built on my [Base Image](https://github.com/chris102994/docker-base-image)
   * [xTeVe](https://xteve.de/) - M3U Proxy for Plex DVR and Emby Live TV.
