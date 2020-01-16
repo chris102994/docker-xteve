@@ -1,0 +1,40 @@
+For help run: /app/xteve -h
+
+[0m2020/01/07 22:53:57 [xTeVe] Version:               2.1.1 Build: 0112
+[0m[0m2020/01/07 22:53:57 [xTeVe] Database Version:      2.1.0
+[0m[0m2020/01/07 22:53:57 [xTeVe] System IP Addresses:   IPv4: 2 | IPv6: 0
+[0m[0m2020/01/07 22:53:57 [xTeVe] Hostname:              830b0f1cafc9
+[0m[0m2020/01/07 22:53:57 [xTeVe] System Folder:         /config/
+[0m[0m2020/01/07 22:53:57 [xTeVe] Load Settings:         /config/settings.json
+[0m[0m2020/01/07 22:53:57 [xTeVe] Temporary Folder:      /tmp/xteve/2020-01-2K6G-BZBACH/
+[0m[0m2020/01/07 22:53:57 [xTeVe] GitHub:                https://github.com/xteve-project
+[0m[0m2020/01/07 22:53:57 [xTeVe] Git Branch:            master [xteve-project]
+[0m[0m2020/01/07 22:53:57 [xTeVe] SSDP / DLNA:           true
+[0m[0m2020/01/07 22:53:58 [xTeVe] UUID:                  2020-01-2K6G-BZBACH
+[0m[0m2020/01/07 22:53:58 [xTeVe] Tuner (Plex / Emby):   4
+[0m[0m2020/01/07 22:53:58 [xTeVe] EPG Source:            XEPG
+[0m[0m2020/01/07 22:53:58 [xTeVe] Plex Channel Limit:    480
+[0m[0m2020/01/07 22:53:58 [xTeVe] Backup Path:           /config/backup/
+[0m[0m2020/01/07 22:53:58 [xTeVe] Backup file:           /config/backup/xteve_auto_backup_20200107_2253.zip
+[0m[0m2020/01/07 22:53:58 [xTeVe] Download:              http://beastiptv.tv:8080/get.php?username=chris102994@yahoo.com&password=30651489sheba&output=ts&type=m3u_plus
+[0m[0m2020/01/07 22:53:58 [xTeVe] Header filename:       tv_channels_chris102994@yahoo.com_plus.m3u
+[0m[0m2020/01/07 22:53:58 [xTeVe] Check File:            http://beastiptv.tv:8080/get.php?username=chris102994@yahoo.com&password=30651489sheba&output=ts&type=m3u_plus
+[0m[0m2020/01/07 22:53:58 [xTeVe] Save File:             http://beastiptv.tv:8080/get.php?username=chris102994@yahoo.com&password=30651489sheba&output=ts&type=m3u_plus [ID: MU2A76MALGJ3H8FK7Q33]
+[0m[0m2020/01/07 22:53:58 [xTeVe] Download:              http://beastiptv.tv:8080/xmltv.php?username=chris102994@yahoo.com&password=30651489sheba
+[0m[0m2020/01/07 22:53:58 [xTeVe] Check File:            http://beastiptv.tv:8080/xmltv.php?username=chris102994@yahoo.com&password=30651489sheba
+[0m[0m2020/01/07 22:53:59 [xTeVe] Save File:             http://beastiptv.tv:8080/xmltv.php?username=chris102994@yahoo.com&password=30651489sheba [ID: XXKPLT29MJUA4U99YX4T]
+[0m[33m2020/01/07 22:53:59 [xTeVe] [WARNING] xTeVe has loaded more than 480 streams. Use the filter to reduce the number of streams.
+[0m[0m2020/01/07 22:53:59 [xTeVe] All streams:           2252
+[0m[0m2020/01/07 22:53:59 [xTeVe] Active streams:        0
+[0m[0m2020/01/07 22:53:59 [xTeVe] Filter:                0
+[0m[0m2020/01/07 22:53:59 [xTeVe] XEPG:                  Parse XMLTV file: XMLTV
+[0m[0m2020/01/07 22:54:00 [xTeVe] XEPG:                  Update database
+[0m[0m2020/01/07 22:54:00 [xTeVe] XEPG:                  Map channels
+[0m[0m2020/01/07 22:54:00 [xTeVe] XEPG:                  Cleanup database
+[0m[0m2020/01/07 22:54:00 [xTeVe] XEPG Channels:         0
+[0m[0m2020/01/07 22:54:00 [xTeVe] DVR IP:                172.17.0.2:34400
+[0m[32m2020/01/07 22:54:00 [xTeVe] Web Interface:         http://172.17.0.2:34400/web/ | xTeVe is also available via the other 1 IP.
+[0m[0m2020/01/07 22:54:00 [xTeVe] XEPG:                  Create XMLTV file (/config/data/xteve.xml)
+[0m[0m2020/01/07 22:54:00 [xTeVe] XEPG:                  Create M3U file (/config/data/xteve.m3u)
+[0m[0m2020/01/07 22:54:00 [xTeVe] XEPG:                  Ready to use
+[0m
