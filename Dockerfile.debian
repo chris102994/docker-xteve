@@ -11,17 +11,17 @@ LABEL org.label-schema.vcs-ref=$VCS_REF \
 ARG XTEVE_URL=https://github.com/xteve-project/xTeVe-Downloads/blob/master/xteve_linux_amd64.tar.gz?raw=true
 # ENV Vars for Builder Script
 RUN	echo "##### Downloading Virtual Build Dependencies #####" && \
-		install --virtual build-dependencies \
+		inst-pkg --virtual build-dependencies \
 			curl && \
 	echo "##### Downloading Container items via Curl #####" && \
 		echo "##### Downloading xTeVe #####" && \
 			curl -L -s ${XTEVE_URL} | tar xvzf - -C /app --strip-components 1 && \
 	echo "##### Downloading Runtime Packages #####" && \
-		install \
+		inst-pkg \
 			 vlc \
 			 ffmpeg && \
 	echo "##### Cleaning Up #####" && \
-		remove build-dependencies
+		rm-pkg build-dependencies
 
 # Web Interface Port
 EXPOSE 34400
