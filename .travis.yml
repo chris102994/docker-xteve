@@ -17,8 +17,9 @@ env:
   global:
   - DOCKER_REPO=christopher102994
   - DOCKER_NAME=docker-xteve
-  - ALPINE_TAG=alpine-3.10
-  - DEBIAN_TAG=debian-10
+  - DOCKER_FILE=Dockerfile.alpine
+  - IMAGE_TAG=alpine-3.10
+  - BASE_IMAGE=christopher102994/docker-base-img-gui:alpine-3.10
 
 script:
   - tools/scripts/make_container.sh
