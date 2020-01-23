@@ -17,16 +17,34 @@ env:
   global:
   - DOCKER_REPO=christopher102994
   - DOCKER_NAME=docker-xteve
-  - DOCKER_FILE=Dockerfile.alpine
-  - IMAGE_TAG=alpine-3.10
-  - BASE_IMAGE=christopher102994/docker-base-img-gui:alpine-3.10
+jobs:
+  include:
+  - stage: Alpine Container
+    env: 
+    - DOCKER_FILE=Dockerfile.alpine 
+    - BASE_IMAGE=christopher102994/docker-base-img-gui:alpine-3.10
+    - IMAGE_TAG=alpine-3.10
+    script: tools/scripts/make_container.sh
+    deploy:
+        provider: script
+        script: tools/scripts/push_to_registry.sh
+        
+  - stage: Debian Container
+    env: 
+      - DOCKER_FILE=Dockerfile.debian 
+      - BASE_IMAGE=christopher102994/docker-base-img-gui:debian-10
+      - IMAGE_TAG=debian-10
+    script: tools/scripts/make_container.sh
+    deploy:
+        provider: script
+        script: tools/scripts/push_to_registry.sh
 
-script:
-  - tools/scripts/make_container.sh
-
-deploy:
-  provider: script
-  script: tools/scripts/push_to_registry.sh
-  on:
-    branch: master
-
+  - stage: Ubuntu Container
+    env: 
+    - DOCKER_FILE=Dockerfile.debian 
+    - BASE_IMAGE=christopher102994/docker-base-img-gui:ubuntu-bionic
+    - IMAGE_TAG=ubuntu-bionic
+    script: tools/scripts/make_container.sh
+    deploy:
+        provider: script
+        script: tools/scripts/push_to_registry.sh
