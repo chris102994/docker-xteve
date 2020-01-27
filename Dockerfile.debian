@@ -1,10 +1,15 @@
-# Pull the base image
 ARG BASE_IMAGE=unknown
+FROM christopher102994/docker-ffmpeg:ubuntu-bionic as binstage
+# Pull the base image
 FROM ${BASE_IMAGE}
 MAINTAINER chris102994<chris102994@yahoo.com>
 ARG BUILD_DATE
 ARG VERSION
 ARG VCS_REF
+# Add files from binstage
+COPY --from=binstage / /
+ENV NVIDIA_DRIVER_CAPABILITIES="compute,video,utility" \
+    NVIDIA_VISIBLE_DEVICES="all"
 LABEL org.label-schema.vcs-ref=$VCS_REF \
       org.label-schema.vcs-url="https://github.com/chris102994/docker-xteve"
 # Package URLs
@@ -18,8 +23,7 @@ RUN	echo "##### Downloading Virtual Build Dependencies #####" && \
 			curl -L -s ${XTEVE_URL} | tar xvzf - -C /app --strip-components 1 && \
 	echo "##### Downloading Runtime Packages #####" && \
 		inst-pkg \
-			 vlc \
-			 ffmpeg && \
+			 vlc && \
 	echo "##### Cleaning Up #####" && \
 		rm-pkg build-dependencies
 
