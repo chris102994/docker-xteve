@@ -13,17 +13,12 @@ services:
 git:
   submodules: false
 
-env:
-  global:
-  - DOCKER_REPO=christopher102994
-  - DOCKER_NAME=docker-xteve
-
 jobs:
   include:
   - stage: Alpine Container
     script:
       - git submodule update --init --recursive
-      - source tools/scripts/load_env_files.sh versions/alpine-3.10.env
+      - source tools/scripts/load_env_files.sh versions/alpine-3.10.env versions/docker-xteve.env
       - source tools/scripts/versioning.sh 
       - tools/scripts/make_container.sh
     deploy:
@@ -40,8 +35,10 @@ jobs:
         provider: script
         script: tools/scripts/push_to_registry.sh
 
-  - stage: Git Tag
+  - stage: Git Tag & Docker Hub README
     script: 
       - git submodule update --init --recursive
+      - source tools/scripts/load_env_files.sh versions/docker-xteve.env
       - source tools/scripts/versioning.sh
       - tools/scripts/push_git_tag.sh
+      - tools/scripts/push_readme_to_dockerhub.sh
