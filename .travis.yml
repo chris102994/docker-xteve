@@ -28,7 +28,7 @@ jobs:
   - stage: Ubuntu Container
     script:
       - git submodule update --init --recursive
-      - source tools/scripts/load_env_files.sh versions/ubuntu-18.env
+      - source tools/scripts/load_env_files.sh versions/ubuntu-18.env versions/docker-xteve.env
       - source tools/scripts/versioning.sh 
       - tools/scripts/make_container.sh
     deploy:
