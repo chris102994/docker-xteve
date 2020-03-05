@@ -3,9 +3,11 @@
 [![https://xteve.de/](https://repository-images.githubusercontent.com/199413814/f26b8300-b564-11e9-9e8d-196438cee819)](https://xteve.de/)
 
  
- [![Build Status](https://travis-ci.com/chris102994/docker-xteve.svg?branch=master)](https://travis-ci.com/chris102994/docker-xteve)
+[![Build Status](https://travis-ci.com/chris102994/docker-xteve.svg?branch=master)](https://travis-ci.com/chris102994/docker-xteve)
 [![Microbadger Size & Layers](https://images.microbadger.com/badges/image/christopher102994/docker-xteve.svg)](https://microbadger.com/images/christopher102994/docker-xteve "Get your own image badge on microbadger.com")
- [![Image Pulls](https://img.shields.io/docker/pulls/christopher102994/docker-xteve)](https://hub.docker.com/repository/docker/christopher102994/docker-xteve)
+[![Image Pulls](https://img.shields.io/docker/pulls/christopher102994/docker-xteve)](https://hub.docker.com/repository/docker/christopher102994/docker-xteve)
+ [![Alpine](https://images.microbadger.com/badges/version/christopher102994/docker-xteve:alpine-3.10-latest.svg)](https://microbadger.com/images/christopher102994/docker-xteve:alpine-3.10-latest "Get your own version badge on microbadger.com")
+ [![Ubuntu](https://images.microbadger.com/badges/version/christopher102994/docker-xteve:ubuntu-18-latest.svg)](https://microbadger.com/images/christopher102994/docker-xteve:ubuntu-18-latest "Get your own version badge on microbadger.com")
  
 ## Outside Packages
 * Built on my [Base Image](https://github.com/chris102994/docker-base-image)
