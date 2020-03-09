@@ -40,6 +40,6 @@ jobs:
       - git submodule update --init --remote
       - |
         tools/build/build_container.sh \
-        -e versions/docker-base-image.env \
+        -e versions/docker-xteve.env \
         -g true \
         -r true
