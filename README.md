@@ -32,6 +32,11 @@ Container specific parameters passed at runtime. The format is `<external>:<inte
 | -p 34400 | The web UI port. |
 | -v /config | The directory where the application will store configuration information. |
 | -e XTEVE_PORT | This must match the port you map to the container so that xteve can correctly forward the stream. (Default=34400) |
+| -e USERNAME | The Username you wish to run as. (Optional) |
+| -e GROUPNAME | The Groupname you wish to run as. (Optional) |
+| -e PUID | The UID you wish to run and save files as. (Optional) |
+| -e PGID | The GID you wish to run and save files as. (Optional) |
+
 
 ## Application Setup
 
