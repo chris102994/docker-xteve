@@ -25,6 +25,14 @@ jobs:
         --build \
         --pushdr
 
+  - stage: Docker Testing
+    script: 
+      - git submodule update --init --remote
+      - |
+        tools/build/build_container.sh \
+        --envfile versions/docker-xteve.env \
+        --testc
+
   - stage: Ubuntu Container
     script:
       - git submodule update --init --remote
